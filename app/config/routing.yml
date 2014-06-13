@@ -1,0 +1,4 @@
+test_app_main:
+    resource: "@TestAppMainBundle/Resources/config/routing.yml"
+    prefix:   /
+
