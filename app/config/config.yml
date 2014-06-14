@@ -45,12 +45,12 @@ assetic:
 # Doctrine Configuration
 doctrine:
     dbal:
-        driver:   "%database_driver%"
-        host:     "%database_host%"
-        port:     "%database_port%"
-        dbname:   "%database_name%"
-        user:     "%database_user%"
-        password: "%database_password%"
+        driver:   "pdo_mysql"
+        host:     "us-cdbr-east-06.cleardb.net"
+        port:     "3306"
+        dbname:   "heroku_932cc843d4594bc"
+        user:     "b7b8fb735807f9"
+        password: "07627e6c"
         charset:  UTF8
         # if using pdo_sqlite as your database driver, add the path in parameters.yml
         # e.g. database_path: "%kernel.root_dir%/data/data.db3"
