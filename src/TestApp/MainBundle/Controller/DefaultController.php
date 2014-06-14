@@ -6,6 +6,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Httpful\Request;
 use TestApp\MainBundle\Entity\Contact;
+use TestApp\MainBundle\Entity;
 
 class DefaultController extends Controller
 {
