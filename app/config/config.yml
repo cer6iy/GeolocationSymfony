@@ -60,7 +60,7 @@ doctrine:
         auto_generate_proxy_classes: "%kernel.debug%"
         entity_managers:
             defaults:
-                auto_mapping: true
+                auto_mapping: false
                 mappings:
                     TestAppMainBundle: ~
 
