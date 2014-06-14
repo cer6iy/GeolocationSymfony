@@ -62,7 +62,11 @@ doctrine:
             defaults:
                 auto_mapping: false
                 mappings:
-                    TestAppMainBundle: ~
+                    TestAppMainBundle:
+                         type: annotation
+                         prefix: TestApp\MainBundle\Entity
+                         alias: TestAppMainBundle # this one is optional and will default to the name set for the mapping
+
 
 # Swiftmailer Configuration
 swiftmailer:
