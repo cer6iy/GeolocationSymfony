@@ -1,1 +1,26 @@
-Hello {{ name }}!
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Тестовое задание</title>
+</head>
+<body>
+<h3>Добрый день, вы просматриваете страницу для города {{ contact.getCityRu }}, телефон для
+    справок: {{ contact.getPhone }}</h3>
+
+<select id="contacts">
+    {% for item in contacts %}
+        <option value="{{ item.getCityEn }}" {% if item.getCityEn == contact.getCityEn %} selected {% endif %}>{{ item.getCityRu }}</option>
+    {% endfor %}
+</select>
+
+
+{% block javascripts %}
+    {% javascripts
+    '@TestAppMainBundle/Resources/public/js/jquery.min.js'
+    '@TestAppMainBundle/Resources/public/js/*'%}
+    <script type="text/javascript" src="{{ asset_url }}"></script>
+    {% endjavascripts %}
+{% endblock %}
+
+</body>
+</html>

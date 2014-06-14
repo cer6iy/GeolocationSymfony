@@ -1,3 +1,10 @@
 test_app_main_homepage:
-    pattern:  /ip
+    pattern:  /
     defaults: { _controller: TestAppMainBundle:Default:index }
+
+
+test_app_main_conact:
+    pattern: /{city}
+    defaults: { _controller: TestAppMainBundle:Default:contact }
+
+

@@ -20,7 +20,8 @@
         "incenteev/composer-parameter-handler": "~2.0",
         "sensio/buzz-bundle": "dev-master",
         "curl/curl": "1.1.3",
-        "sensio/generator-bundle": "2.3.x-dev"
+        "sensio/generator-bundle": "2.3.x-dev",
+        "nategood/httpful": "0.2.13"
     },
     "require-dev": {
     },
