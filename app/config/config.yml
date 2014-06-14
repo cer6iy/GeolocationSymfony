@@ -58,15 +58,7 @@ doctrine:
 
     orm:
         auto_generate_proxy_classes: "%kernel.debug%"
-        entity_managers:
-            defaults:
-                auto_mapping: false
-                mappings:
-                    TestAppMainBundle:
-                         type: annotation
-                         prefix: TestApp\MainBundle\Entity
-                         alias: TestAppMainBundle # this one is optional and will default to the name set for the mapping
-
+        auto_mapping: true
 
 # Swiftmailer Configuration
 swiftmailer:
