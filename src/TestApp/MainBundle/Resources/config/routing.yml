@@ -5,6 +5,6 @@ test_app_main_homepage:
 
 test_app_main_conact:
     pattern: /{city}
-    defaults: { _controller: TestAppMainBundle:Default:contact }
+    defaults: { _controller: TestAppMainBundle:Main:contact }
 
 

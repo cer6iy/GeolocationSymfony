@@ -10,6 +10,7 @@ use TestApp\MainBundle\Entity;
 
 class DefaultController extends Controller
 {
+
     public function indexAction()
     {
         $uri = "http://api.sypexgeo.net";
@@ -36,7 +37,7 @@ class DefaultController extends Controller
 
 
 
-
+/*
     public function contactAction($city)
     {
         $defaultCity = "Moscow";
@@ -56,8 +57,7 @@ class DefaultController extends Controller
 
         return $this->render('TestAppMainBundle:Default:index.html.twig', array('contacts' => $contacts, 'contact' => $contact));
 
-        /*return new Response('<html><body> Created product id ' . $contact->getId() . $response->body->ip . "  " . $response->body->city->name_en . "  " . $response->body->city->name_ru . '</body></html>');*/
+    }*/
 
-        //return new Response('<html><body> Добрый день, вы просматриваете страницу для города ' . $contact->getCityRu() .', телефон для справок: ' . $contact->getPhone() . '</body></html>');
-    }
+
 }
