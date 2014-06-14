@@ -21,7 +21,7 @@ class DefaultController extends Controller
             ->sendIt();
         $currentCity = $response->body->city->name_en;
 
-        $repository = $this->getDoctrine()->getRepository('TestApp\MainBundle\Entity\Contact');
+        $repository = $this->getDoctrine()->getRepository('TestApp\MainBundle\Entity\Contact\Contact');
         //get contact by city english name
         $contact = $repository->findOneBy (array('city_en' => $currentCity));
         if (!$contact) {
@@ -45,7 +45,7 @@ class DefaultController extends Controller
 
         $currentCity = $city;
 
-        $repository = $this->getDoctrine()->getRepository('TestApp\MainBundle\Entity\Contact');
+        $repository = $this->getDoctrine()->getRepository('TestApp\MainBundle\Entity\Contact\Contact');
         //get contact by city english name
         $contact = $repository->findOneBy (array('city_en' => $currentCity));
         if (!$contact) {
